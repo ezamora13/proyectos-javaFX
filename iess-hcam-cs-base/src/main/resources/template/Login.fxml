@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="267.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iesshcam.iess.hcam.cs.principal.LoginControlador">
+   <center>
+      <Pane prefHeight="154.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="66.0" layoutY="49.0" prefHeight="15.0" prefWidth="78.0" text="Usuario:" />
+            <Label layoutX="65.0" layoutY="81.0" text="Contraseña:" />
+            <TextField fx:id="txtUsuario" layoutX="167.0" layoutY="44.0" />
+            <PasswordField fx:id="txtContrasenia" layoutX="167.0" layoutY="74.0" />
+            <Button id="bntAceptar" fx:id="bntAceptar" layoutX="158.0" layoutY="137.0" mnemonicParsing="false" onAction="#bntAceptarOnAction" text="Aceptar" />
+            <Button id="btnCancelar" fx:id="btnCancelar" layoutX="275.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnCancelarOnAction" text="Cancelar" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="69.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="206.0" layoutX="185.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/iess_hcam.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
